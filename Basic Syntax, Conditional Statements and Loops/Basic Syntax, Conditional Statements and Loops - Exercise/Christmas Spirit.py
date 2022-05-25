@@ -25,11 +25,11 @@ while True:
         total += treeSkirt + treeGarland + treeLights
     if days_left % 11 == 0:
         quantity += 2
-    if days == 0 and days_left == 10:
+    if days < 1 and days_left % 10 == 0:
         spirit -= 30
         break
     if days == 0:
         break
 
 print(f"Total cost: {total}\nTotal spirit: {spirit}")
-
+#This one gives 50/100 , ill be fixing that a bit in the future
