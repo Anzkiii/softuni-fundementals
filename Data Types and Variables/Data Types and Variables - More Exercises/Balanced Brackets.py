@@ -6,12 +6,14 @@ brackBool = False
 for i in range(n):
     strInp = input()
     for i in strInp:
-        if i == "(" and not brackBool:
+        if i == "(":
             left += 1
-            brackBool = True
-        if i == ")" and brackBool:
+            if not brackBool:
+                brackBool = True
+        if i == ")":
             right += 1
-            brackBool = False
+            if brackBool:
+                brackBool = False
 if left == right:
     print("BALANCED")
 else:
