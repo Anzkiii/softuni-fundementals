@@ -20,7 +20,7 @@ elif command == "negative":
             commandLst.append(i)
 elif command == "positive":
     for i in lst:
-        if i > 0:
+        if i >= 0:
             commandLst.append(i)
 print(commandLst)
 
