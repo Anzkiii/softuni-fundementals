@@ -3,8 +3,7 @@ A = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
 B = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
 A_left = []
 B_left = []
-playerCards = input()
-playerCardsLst = playerCards.split(" ")
+playerCardsLst = input().split(" ")
 
 for i in playerCardsLst:
     if "A" in i and i[2:] not in A_left:
