@@ -16,3 +16,5 @@ if len(A) < 7 or len(B) < 7:
     print(f"Team A - {len(A)}; Team B - {len(B)}\nGame was terminated")
 else:
     print(f"Team A - {len(A)}; Team B - {len(B)}")
+
+
